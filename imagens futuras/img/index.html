@@ -1,0 +1,29 @@
+<html>
+
+    <head>
+        <title>Slide Show</title>
+            <script>
+                b = 0
+                function slideshadow() {
+                    switch (b) {
+                        case 0: foto.src = "6.jpg";
+                        break;
+                        case 1: foto.src = "7.jpg";
+                        break;
+                        case 2: foto.src = "8.jpg";
+                        break;
+                        case 3: foto.src = "9.jpg";
+                        break;
+                        case 4: foto.src = "10.jpg";
+                            b = -1;
+                    }
+                    b++;
+
+                }
+            </script>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body onload="setInterval('slideshadow()',50)" ;>
+    <p><img src="5.png" name="foto"> </p>
+        </body>
+</html>
